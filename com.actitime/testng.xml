@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testing.org/testing-1.0dtd" >
+<suite name = "TestSuite" verbose ="1" >
+    <test name = "regression">
+        <groups>
+
+            <run>
+                <include name = "regression" />
+                <exclude name = "sanity"   />
+
+            </run>
+        </groups>
+
+        <classes>
+
+            <class name = "com.orangehrm.automation.TaskTest" />
+        </classes>
+    </test>
